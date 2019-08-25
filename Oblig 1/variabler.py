@@ -1,4 +1,4 @@
-# Spør brukeren om navn
+# Spør brukeren om et navn
 print("Skriv inn ditt navn")
 # Legger verdien i variablen og skriver den ut
 navn = input()
