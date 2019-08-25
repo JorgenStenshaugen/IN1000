@@ -4,7 +4,7 @@ dato1 = input("Skriv inn første dato (eks. 7.10): ").split(".")
 dato2 = input("Skriv inn ny dato (eks. 24.12): ").split(".")
 
 # Vi henter verdiene gjennom et array og utfør samme funksjon som i "dato.py"
-# Bruker int() for å sikkre at verdiene blir tatt inn som heltall.
+# Bruker funskjonen int() for å sikkre at verdiene blir tatt inn som heltall.
 dag1 = int(dato1[0])
 dag2 = int(dato2[0])
 maaned1 = int(dato1[1])
