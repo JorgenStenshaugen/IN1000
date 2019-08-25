@@ -1,0 +1,3 @@
+ls - SE INNHOLDET I MAPPEN DU ER I
+
+cd /mnt/z/"Oblig UIO"
