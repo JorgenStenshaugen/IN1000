@@ -26,7 +26,7 @@ class Brett:
     """docstring for Brett."""
 
     def __init__(self, l, h):
-        self.brikker = [" . ", " o ", " O "]
+        self.brikker = [" . ", " o ", " O ", "[]"]
         self.lengde = l
         self.hoyde = h
         self.settOpp()
@@ -73,26 +73,27 @@ class Player:
     def _check_limit(self, point):
         # Check brett limit
         if point[0] > self.brett.lengde-1:
-            point[0] = 0
+            point[0] = point[0]-1
         elif point[0] < 0:
-            point[0] = self.brett.lengde-1
+            point[0] = 0
         elif point[1] < 0:
-            point[1] = self.brett.hoyde-1
-        elif point[1] > self.brett.hoyde-1:
             point[1] = 0
-
+        elif point[1] > self.brett.hoyde-1:
+            point[1] = point[1]-1
         return point
 
     def beveg(self):
         # Determine head posisjon
         head = self.posisjon[-1][:]
 
-        # Calc new head posisjon
         if self.retning == curses.KEY_UP:
-            head[0]-=1
-        if head[0] > 1:
-            head[0]+=1
-
+            head[0] -=1
+        elif self.retning == curses.KEY_DOWN:
+            head[0] +=1
+        elif self.retning == curses.KEY_RIGHT:
+            head[1] +=1
+        else:
+            head[1] -=1
 
         # Check brett limit
         head = self._check_limit(head)
