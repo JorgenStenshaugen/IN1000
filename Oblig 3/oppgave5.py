@@ -17,16 +17,15 @@ quiz = [["Hvilken kvinnelig superhelt spilles av Gal Gadot i filmen fra 2017?",
 poeng = 0
 
 # Lag et for loop som går gjennom alle spørsmålene.
-for antall_spm in range(len(quiz[0])):
+for spm in range(len(quiz[0])):
     #Printer ut spørsmål og alternativer fra arrayet
-    print(quiz[0][antall_spm], "\n")
-    print(quiz[1][antall_spm])
+    print(quiz[0][spm], "\n" + quiz[1][spm])
 
     # Henter svar fra brukeren
     svar = input("Svaret ditt:\n> ")
 
     # Sjekker om svaret er riktig eller galt gjennom en if/else funksjon og printer ut om det er riktig eller feil
-    if (svar.lower() == quiz[2][antall_spm]):
+    if (svar.lower() == quiz[2][spm]):
         print("Riktig svar!")
         # Legg til poeng
         poeng +=1
