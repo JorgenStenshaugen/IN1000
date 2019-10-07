@@ -1,0 +1,8 @@
+1. Innkapsling er å avgrense tilgangen til objekter slik at man ikke kan hente objektene direkte.
+Dette er nyttig fordi det gjør det enklere og ikke rote til siden endringen av objektet er mer kontrollert.
+
+2. Grensesnittet til en klasse er metodene som man kan manipulere/bruke i objektene til klassen
+dette skiller seg fra implementasjonen fordi der setter vi hvilke variabler objektet skal ha og hvordan metodene skal utføres.
+
+3. Instansmetode er at man tar referansen til objektet som det første parametere i metoden. Dette skiller seg fra prosedyrene/funksjonene
+siden vi manipulerer med hensikt av det spesifike objektet, man tar heller ikke denne parameteren i bruk når du kaller på metoden.
