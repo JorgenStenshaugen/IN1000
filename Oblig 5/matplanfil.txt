@@ -1,0 +1,6 @@
+
+Per,Brødskive,Egg,Biff
+
+Arne,Frokostblanding,Omelette,Taco
+
+Kasper,Brødskive,Wrap,Pasta
