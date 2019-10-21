@@ -1,0 +1,11 @@
+b)
+
+Ordbok i dette tilefellet er ikke nødvendig for da må vi gjøre ekstra arbeid.
+Da må vi legge til en indeks som bestemmer hvor sangen skal ligge. I tilegg må
+denne indeksen bli lagd så vi kan bruke en for loop for å gi ordboken en indeks.
+
+c)
+
+Om man evt ikke skal lese inn en fil, men heller eventuelt legge til sangene manuelt så vil man få problemer
+siden instansvariabelen forventer et argument som du ikke oppgir.
+Det er også mer oversiktlig å ha det i sin egen metode
