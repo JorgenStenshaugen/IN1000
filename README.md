@@ -1,0 +1,2 @@
+# IN1000
+Obliger i IN1000 UIO
